@@ -1,0 +1,8 @@
+
+public abstract class SystemUser {
+	 String userName;
+	 String password;
+	
+	public abstract String getUserID();
+	
+}

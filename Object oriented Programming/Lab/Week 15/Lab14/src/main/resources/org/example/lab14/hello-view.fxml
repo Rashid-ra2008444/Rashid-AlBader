@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab14.HelloController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="102.0" layoutY="69.0" text="First Number" />
+            <Label layoutX="102.0" layoutY="105.0" text="Second Number" />
+            <Label layoutX="102.0" layoutY="148.0" text="Result" />
+            <TextField fx:id="TextF_1" layoutX="300.0" layoutY="74.0" />
+            <TextField fx:id="TextF_2" layoutX="301.0" layoutY="110.0" />
+            <TextField fx:id="Result" editable="false" layoutX="301.0" layoutY="153.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Label text="Calculator App" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="46.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="PlusBTN" fx:id="PlusBTN" mnemonicParsing="false" onAction="#plusClicked" prefHeight="26.0" prefWidth="80.0" text="+" />
+            <Button id="SubBTN" fx:id="SubBTN" mnemonicParsing="false" onAction="#subClicked" prefHeight="26.0" prefWidth="80.0" text="-" />
+            <Button id="MulBTN" fx:id="MulBTN" mnemonicParsing="false" onAction="#mulClicked" prefHeight="26.0" prefWidth="80.0" text="*" />
+            <Button id="DivBTN" fx:id="DivBTN" mnemonicParsing="false" onAction="#divClicked" prefHeight="26.0" prefWidth="80.0" text="/" />
+            <Button id="ClrBTN" fx:id="ClrBTN" mnemonicParsing="false" onAction="#clrClicked" prefHeight="26.0" prefWidth="80.0" text="C">
+               <opaqueInsets>
+                  <Insets top="20.0" />
+               </opaqueInsets>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="40.0" top="40.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
